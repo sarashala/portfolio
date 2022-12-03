@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta http="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9d363b18a9.js" crossorigin="anonymous"></script>
+ </head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a  href="#">Services</a></li>
+                <li><a href="#">Portfolio</a><li>
+                <li><a href="#">Contact Us</a><li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </nav>
+        <div class="header-text">
+            <p>Graphic Designer</p>
+            <h1>Hi, I'm <span>Sara</span><br> Shala from Kosovo.</h1>
+            <button type="button">Let's Talk</button>
+        </div>
+    </div>
+</div>
+<!------------about--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Sara Shala; I am a sophomore studying Computing and Information Technologies at the Rochester Institute of Technology in Kosovo.
+                    In high school I was at "Xhevdet Doda" in Prishtina.
+                    One of my favourite hobbies is playing the piano and listening to music, which I've been doing all my life.
+                    My two main hobbies are web, UI/UX, and graphic design. 
+                    I've always been passionate about art and design, and my professional goals are to succeed in the IT and design fields.
+                    I love to solve programming problems in most efficient ways.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Design</span><br>Creating visual concepts</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June 2022 - July 2022</span><br>Graphic Design Training @ ICK</li>
+                            <li><span>2021-2022</span><br>UI/UX Training @ ICK</li>
+                            <li><span>2021-2022</span><br>Internship at XYZ Kosovo</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2009-2018</span><br>"Xhemail Mustafa" Primary School"</li>
+                            <li><span>2018-2021</span><br>"Xhevdet Doda" High School"</li>
+                            <li><span>2021-Current</span><br>Student @ Rochester Institute of Technology</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Graphic Design</h2>
+                <p>Creating visual concepts to communicate information. I create everything from posters and bilboards
+                to packaging, logos and marketing materials.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Creating a connection between the user and the service provider.
+                I aim to build keen brand awareness to help your company improve costumer satisfaction,
+                improve user interaction, as well as boost your business grow and enhance.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Web Development</h2>
+                <p>involve everything related to building a web-based solution whether
+                it is a simple text page or a complex web application. </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------portfolio------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                    Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>This app lets you download music, podcasts, albums for free.
+                    Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>This app is for people who want to do, for example, grocery shopping online.
+                    Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#"class="btn">See More</a>
+    </div>
+</div>
+<!--------------------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i></i>saraishala01@gmail.com</p>
+                <p><i class="fa-regular fa-phone"></i>+38345832008</p>
+                <div class="social-icons">
+                   <a href="https://www.facebook.com/sara.shala.1460/"><i class="fa-brands fa-facebook"></i></a>
+                   <a href="https://www.instagram.com/saara.shala/"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="https://www.linkedin.com/in/sara-shala-90a51322b/"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="https://twitter.com/saarashala"><i class="fa-brands fa-twitter-square"></i></a>
+                  </div>
+                  <a href="images/resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+             <div class="contact-right"> 
+                 <form name="submit-to-google-sheet">
+                     <input type="text" name="Name" placeholder="Your Name" required>
+                     <input type="email" name="Email" placeholder="Your Email" required>
+                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                     <button type="submit" class="btn btn2">Submit</button>
+                 </form>
+
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Sara. Made with <i class="fa-solid fa-heart"></i> by Sara Shala </p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbywaFeZiX903yCavEMOOTB6mbWTqPl3Rq98nmgPcb_cmaBGRF65XEGUKtLxs-OmvUeu/exec>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
